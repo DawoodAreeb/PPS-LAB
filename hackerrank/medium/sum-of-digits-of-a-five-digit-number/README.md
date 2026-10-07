@@ -1,4 +1,4 @@
-# For Loop in C
+# Conditional Statements in C
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -30,31 +30,39 @@ Print the sum of the digits of the five digit number.
 **Language:** C  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:53:52.640Z  
+**Submitted:** 2026-10-07T15:57:58.753Z  
 
 ```c
 #include <stdio.h>
 
 int main() {
-    int a, b;
-    scanf("%d %d", &a, &b);
+    int n;
+    scanf("%d", &n);
 
-    const char *names[] = {"zero", "one", "two", "three", "four",
-                           "five", "six", "seven", "eight", "nine"};
-
-    for (int n = a; n <= b; n++) {
-        if (n >= 1 && n <= 9) {
-            printf("%s\n", names[n]);
-        } else if (n % 2 == 0) {
-            printf("even\n");
-        } else {
-            printf("odd\n");
-        }
+    if (n == 1) {
+        printf("one\n");
+    } else if (n == 2) {
+        printf("two\n");
+    } else if (n == 3) {
+        printf("three\n");
+    } else if (n == 4) {
+        printf("four\n");
+    } else if (n == 5) {
+        printf("five\n");
+    } else if (n == 6) {
+        printf("six\n");
+    } else if (n == 7) {
+        printf("seven\n");
+    } else if (n == 8) {
+        printf("eight\n");
+    } else if (n == 9) {
+        printf("nine\n");
+    } else {
+        printf("Greater than 9\n");
     }
 
     return 0;
 }
-
 
 ```
 
